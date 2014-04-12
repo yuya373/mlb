@@ -51,7 +51,7 @@ class Batter < ActiveRecord::Base
     def fetch
       ::Team::TEAM_ID.each do |team_id|
         uri = Scrapable::BASE_URL +
-          "components/team/stats/#{team_id}-stats.xml"
+          "components/team/stats/year_2014/#{team_id}-stats.xml"
         row_batter = Nokogiri::XML.parse(open(uri)).css('batter')
         row_batter.each do |b|
           attr = normarize(b.attributes)
