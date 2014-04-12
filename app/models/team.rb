@@ -15,8 +15,10 @@
 #
 
 class Team < ActiveRecord::Base
+  self.primary_key = :id
   include Scrapable
   TEAM_ID = ((108..121).to_a + (133..147).to_a + [158]).freeze
+  has_many :batters
   class << self
     def fetch
       TEAM_ID.each do |team_id|
