@@ -21,6 +21,8 @@
 
 class Batter < ActiveRecord::Base
   self.primary_key = 'id'
+  belongs_to :team
+  has_one :batter_stat
 
   include Scrapable
 
@@ -49,7 +51,7 @@ class Batter < ActiveRecord::Base
 
   class << self
     def fetch
-      ::Team::TEAM_ID.each do |team_id|
+      Team.pluck(:id).each do |team_id|
         uri = Scrapable::BASE_URL +
           "components/team/stats/year_2014/#{team_id}-stats.xml"
         row_batter = Nokogiri::XML.parse(open(uri)).css('batter')
