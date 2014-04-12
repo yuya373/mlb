@@ -11,20 +11,32 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20140412065253) do
+ActiveRecord::Schema.define(version: 20140412102304) do
 
-  create_table "examples", force: true do |t|
+  create_table "batters", id: false, force: true do |t|
+    t.integer  "id",                   null: false
+    t.string   "first_name",           null: false
+    t.string   "last_name",            null: false
+    t.integer  "bats",       limit: 1, null: false
+    t.integer  "pos",        limit: 1, null: false
+    t.integer  "number",               null: false
+    t.integer  "team_id",              null: false
     t.datetime "created_at"
     t.datetime "updated_at"
   end
 
-  create_table "teams", force: true do |t|
-    t.integer  "team_id",    null: false
+  add_index "batters", ["id"], name: "index_batters_on_id", unique: true, using: :btree
+  add_index "batters", ["team_id"], name: "index_batters_on_team_id", using: :btree
+
+  create_table "teams", id: false, force: true do |t|
+    t.integer  "id",         null: false
     t.integer  "league_id",  null: false
     t.string   "name",       null: false
     t.string   "abbrev",     null: false
     t.datetime "created_at"
     t.datetime "updated_at"
   end
+
+  add_index "teams", ["id"], name: "index_teams_on_id", unique: true, using: :btree
 
 end
