@@ -36,6 +36,7 @@ class Team < ActiveRecord::Base
       attr.each do |_, v|
         key = v.name.gsub(/team_/, '')
         v = v.value
+        v = v.to_i if key == 'id'
         normarized[key.to_sym] = v if Team.attribute_names.include? key
       end
       normarized
