@@ -14,13 +14,13 @@
 ActiveRecord::Schema.define(version: 20140412102304) do
 
   create_table "batters", id: false, force: true do |t|
-    t.integer  "id",                   null: false
-    t.string   "first_name",           null: false
-    t.string   "last_name",            null: false
-    t.integer  "bats",       limit: 1, null: false
-    t.integer  "pos",        limit: 1, null: false
-    t.integer  "number",               null: false
-    t.integer  "team_id",              null: false
+    t.integer  "id",                      null: false
+    t.string   "first_name",              null: false
+    t.string   "last_name",               null: false
+    t.integer  "bats",          limit: 1, null: false
+    t.integer  "pos",           limit: 1, null: false
+    t.integer  "jersey_number",           null: false
+    t.integer  "team_id",                 null: false
     t.datetime "created_at"
     t.datetime "updated_at"
   end
