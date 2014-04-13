@@ -5,6 +5,7 @@
 # unless any hosts have the primary property set.
 # Don't declare `role :all`, it's a meta role
 set :stage, :staging
+ask :branch, 'feature/capistrano'
 
 role :app, %w{localhost}
 role :web, %w{localhost}
