@@ -47,7 +47,7 @@ namespace :deploy do
   desc 'Create database'
   task :create_db do
     on roles(:db) do
-      execute "bundle exec rake db:create RAILS_ENV=#{rails_env}"
+      execute "mysql -u root -e 'CREATE DATABASE IF NOT EXISTS #{fetch :application}_#{fetch :rails_env} ;'"
     end
   end
 end
