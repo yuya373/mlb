@@ -5,7 +5,8 @@
 # unless any hosts have the primary property set.
 # Don't declare `role :all`, it's a meta role
 set :stage, :staging
-ask :branch, 'feature/capistrano'
+set :rails_env, 'staging'
+set :branch, 'feature/capistrano'
 
 role :app, %w{localhost}
 role :web, %w{localhost}
@@ -41,3 +42,12 @@ server 'localhost',
     # password: 'please use keys'
   }
 # setting per server overrides global ssh_options
+
+namespace :deploy do
+  desc 'Create database'
+  task :create_db do
+    on roles(:db) do
+      execute "bundle exec rake db:create RAILS_ENV=#{rails_env}"
+    end
+  end
+end
