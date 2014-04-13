@@ -35,6 +35,10 @@ group :development do
   gem 'pry-coolline'
   gem 'annotate', github: 'ctran/annotate_models'
   gem 'rb-readline'
+  gem 'capistrano'
+  gem 'capistrano-rails', require: false
+  gem 'capistrano-rbenv', require: false
+  gem 'capistrano-bundler', require: false
 end
 
 group :development, :test do
