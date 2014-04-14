@@ -6,6 +6,8 @@
 # Don't declare `role :all`, it's a meta role
 set :stage, :staging
 set :rails_env, 'staging'
+set :unicorn_env, :staging
+set :unicorn_rack_env, :deployment
 # set :branch, 'feature/capistrano'
 set :branch, 'feature/unicorn'
 
