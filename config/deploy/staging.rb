@@ -8,8 +8,7 @@ set :stage, :staging
 set :rails_env, 'staging'
 set :unicorn_env, :staging
 set :unicorn_rack_env, :deployment
-# set :branch, 'feature/capistrano'
-set :branch, 'feature/unicorn'
+set :branch, 'master'
 
 role :app, %w{localhost}
 role :web, %w{localhost}
