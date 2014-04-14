@@ -52,3 +52,7 @@ production:
   database: mlb_production
   username: mlb
   password: <%= ENV['MLB_DATABASE_PASSWORD'] %>
+
+staging:
+  <<: *default
+  database: mlb_staging
