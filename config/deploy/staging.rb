@@ -6,7 +6,8 @@
 # Don't declare `role :all`, it's a meta role
 set :stage, :staging
 set :rails_env, 'staging'
-set :branch, 'feature/capistrano'
+# set :branch, 'feature/capistrano'
+set :branch, 'feature/unicorn'
 
 role :app, %w{localhost}
 role :web, %w{localhost}
