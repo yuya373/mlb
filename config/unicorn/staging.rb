@@ -1,8 +1,8 @@
 app_path = '/home/vagrant/mlb'
-worker_processes 4
+worker_processes 1
 working_directory "#{app_path}/current"
 
-listen "#{app_path}/shared/tmp/sockets/unicorn.sock"
+listen "#{app_path}/current/tmp/sockets/unicorn.sock"
 timeout 20
 
 pid "#{app_path}/current/tmp/pids/unicorn.pid"
