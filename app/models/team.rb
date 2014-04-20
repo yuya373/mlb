@@ -2,7 +2,7 @@
 #
 # Table name: teams
 #
-#  id         :integer          not null
+#  id         :integer          not null, primary key
 #  league_id  :integer          not null
 #  name       :string(255)      not null
 #  abbrev     :string(255)      not null
@@ -18,17 +18,12 @@ class Team < ActiveRecord::Base
   self.primary_key = :id
   include Scrapable
   TEAM_ID = ((108..121).to_a + (133..147).to_a + [158]).freeze
-  has_many :batters
+  has_many :batters, foreign_key: :team_id
   class << self
-    def fetch
-      TEAM_ID.each do |team_id|
-        uri = Scrapable::BASE_URL +
-          "components/team/stats/year_2014/#{team_id}-stats.xml"
-        content = Nokogiri::XML.parse(open(uri)).css('TeamStats')
-        attr = normarize(content.first.attributes)
-        team = find_or_initialize_by(id: attr[:id])
-        team.update!(attr)
-      end
+    def create_or_update(doc)
+      attr = normarize(doc.first.attributes)
+      team = find_or_initialize_by(id: attr[:id])
+      team.update!(attr)
     end
 
     private

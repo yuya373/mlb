@@ -14,7 +14,7 @@
 ActiveRecord::Schema.define(version: 20140412155057) do
 
   create_table "batter_stats", force: true do |t|
-    t.integer  "batter_id"
+    t.integer  "batter_id",  null: false
     t.integer  "h",          null: false
     t.integer  "ab",         null: false
     t.integer  "tb",         null: false
@@ -40,7 +40,7 @@ ActiveRecord::Schema.define(version: 20140412155057) do
     t.datetime "updated_at"
   end
 
-  add_index "batter_stats", ["batter_id"], name: "index_batter_stats_on_batter_id", using: :btree
+  add_index "batter_stats", ["batter_id"], name: "index_batter_stats_on_batter_id", unique: true, using: :btree
 
   create_table "batters", id: false, force: true do |t|
     t.integer  "id",                      null: false

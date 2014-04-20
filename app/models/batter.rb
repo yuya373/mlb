@@ -20,9 +20,9 @@
 #
 
 class Batter < ActiveRecord::Base
-  self.primary_key = 'id'
+ self.primary_key = 'id'
   belongs_to :team
-  has_one :batter_stat
+  has_one :batter_stat, foreign_key: :batter_id
 
   include Scrapable
 
@@ -38,7 +38,8 @@ class Batter < ActiveRecord::Base
   }.freeze
 
   POS = {
-    'P'  => 1,
+    'D'  => 0,
+    'P' => 1,
     'C'  => 2,
     '1B' => 3,
     '2B' => 4,
@@ -46,20 +47,16 @@ class Batter < ActiveRecord::Base
     'SS' => 6,
     'LF' => 7,
     'CF' => 8,
-    'RF' => 9
+    'RF' => 9,
+    'O'  => 10
   }.freeze
 
   class << self
-    def fetch
-      Team.pluck(:id).each do |team_id|
-        uri = Scrapable::BASE_URL +
-          "components/team/stats/year_2014/#{team_id}-stats.xml"
-        row_batter = Nokogiri::XML.parse(open(uri)).css('batter')
-        row_batter.each do |b|
-          attr = normarize(b.attributes)
-          batter = find_or_initialize_by(id: attr[:id])
-          batter.update!(attr)
-        end
+    def create_or_update(batter)
+      batter.each do |b|
+        attr = normarize(b.attributes)
+        batter = find_or_initialize_by(id: attr[:id])
+        batter.update!(attr)
       end
     end
 
