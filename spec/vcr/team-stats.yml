@@ -1,0 +1,489 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: http://gd2.mlb.com/components/team/stats/114-stats.xml
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+      User-Agent:
+      - Ruby
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Server:
+      - Apache/2.0.65 (Unix)
+      Last-Modified:
+      - Sun, 20 Apr 2014 10:05:17 GMT
+      Etag:
+      - "\"76c6-4f7768508f140\""
+      Expires:
+      - Sun, 20 Apr 2014 10:49:09 GMT
+      Edge-Control:
+      - max-age=15
+      Cache-Control:
+      - max-age=15
+      Content-Type:
+      - application/xml
+      Content-Length:
+      - '30406'
+      Accept-Ranges:
+      - bytes
+      Date:
+      - Sun, 20 Apr 2014 10:49:07 GMT
+      X-Varnish:
+      - 1415082946 1415081153
+      Via:
+      - 1.1 varnish
+      Connection:
+      - keep-alive
+      X-Varnish-Cache:
+      - HIT
+      X-Served-By:
+      - w1cache10.web1.mlbam.net
+    body:
+      encoding: UTF-8
+      string: "<?xml version=\"1.0\" encoding=\"UTF-8\"?><!--Copyright 2014 MLB Advanced
+        Media, L.P.  Use of any content on this page acknowledges agreement to the
+        terms posted here http://gdx.mlb.com/components/copyright.txt--><TeamStats
+        game_id=\"2014/04/19/tormlb-clemlb-1\" team_name=\"Cleveland Indians\" sport_code=\"mlb\"
+        team_id=\"114\" team_abbrev=\"CLE\" league_id=\"103\" league=\"AL\" gameType=\"R\"
+        date=\"April 19, 2014\"><home_batting H=\"135\" AB=\"566\" TB=\"206\" AVG=\".239\"
+        SLG=\".364\" G=\"17\" R=\"71\" B2=\"26\" B3=\"3\" HR=\"13\" RBI=\"67\" SAC=\"4\"
+        SF=\"6\" HBP=\"4\" BB=\"75\" IBB=\"3\" SO=\"120\" SB=\"13\" CS=\"1\" GIDP=\"18\"
+        OBP=\".329\" OPS=\".693\"><batter id=\"543766\" name=\"Shaw, Bryan\" ACTIVE_SW=\"Y\"
+        STATUS_CD=\"A\" LAST_NAME=\"Shaw\" NAME_DISPLAY_LAST_FIRST=\"Shaw, Bryan\"
+        NAME_DISPLAY_FIRST_LAST=\"Bryan Shaw\" NAME_DISPLAY_ROSTER=\"Shaw\" BATS=\"S\"
+        THROWS=\"R\" POS=\"P\" JERSEY_NUMBER=\"27\" YEAR=\"2014\" TEAM_ID=\"114\"
+        TEAM_ABBREV=\"CLE\" LEAGUE_ID=\"103\" LEAGUE=\"AL\" LEAGUE_GAMES=\"162\" H=\"0\"
+        AB=\"0\" TB=\"0\" AVG=\".000\" AVG_SORT=\"0.0\" SLG=\".000\" SLG_SORT=\"0.0\"
+        A=\"0\" E=\"0\" PO=\"0\" G=\"0\" R=\"0\" B2=\"0\" B3=\"0\" HR=\"0\" RBI=\"0\"
+        SAC=\"0\" SF=\"0\" HBP=\"0\" BB=\"0\" IBB=\"0\" SO=\"0\" SB=\"0\" CS=\"0\"
+        GIDP=\"0\" OPS=\".000\" OPS_SORT=\"0.0\" OBP=\".000\" OBP_SORT=\"0.0\" NP=\"0\"
+        GO=\"0\" AO=\"0\" TPA=\"0\" OF_A=\"0\" PH_AB=\"0\" PH_H=\"0\" PH_HR=\"0\"
+        PH_RBI=\"0\" LAST10_AB=\"0\" LAST10_H=\"0\" LAST10_HR=\"0\" LAST10_RBI=\"0\"/><batter
+        id=\"449107\" name=\"Aviles, Mike\" ACTIVE_SW=\"Y\" STATUS_CD=\"A\" LAST_NAME=\"Aviles\"
+        NAME_DISPLAY_LAST_FIRST=\"Aviles, Mike\" NAME_DISPLAY_FIRST_LAST=\"Mike Aviles\"
+        NAME_DISPLAY_ROSTER=\"Aviles\" BATS=\"R\" THROWS=\"R\" POS=\"3B\" JERSEY_NUMBER=\"4\"
+        YEAR=\"2014\" TEAM_ID=\"114\" TEAM_ABBREV=\"CLE\" LEAGUE_ID=\"103\" LEAGUE=\"AL\"
+        LEAGUE_GAMES=\"162\" H=\"10\" AB=\"37\" TB=\"14\" AVG=\".270\" AVG_SORT=\"0.27027026\"
+        SLG=\".378\" SLG_SORT=\"0.3783784\" A=\"16\" E=\"1\" PO=\"0\" G=\"12\" R=\"5\"
+        B2=\"1\" B3=\"0\" HR=\"1\" RBI=\"5\" SAC=\"1\" SF=\"1\" HBP=\"0\" BB=\"3\"
+        IBB=\"0\" SO=\"6\" SB=\"3\" CS=\"0\" GIDP=\"0\" OPS=\".695\" OPS_SORT=\"0.69545156\"
+        OBP=\".317\" OBP_SORT=\"0.31707317\" NP=\"161\" GO=\"11\" AO=\"12\" TPA=\"42\"
+        OF_A=\"0\" PH_AB=\"1\" PH_H=\"0\" PH_HR=\"0\" PH_RBI=\"0\" LAST10_AB=\"34\"
+        LAST10_H=\"9\" LAST10_HR=\"1\" LAST10_RBI=\"5\"/><batter id=\"517593\" name=\"Salazar,
+        Danny\" ACTIVE_SW=\"Y\" STATUS_CD=\"A\" LAST_NAME=\"Salazar\" NAME_DISPLAY_LAST_FIRST=\"Salazar,
+        Danny\" NAME_DISPLAY_FIRST_LAST=\"Danny Salazar\" NAME_DISPLAY_ROSTER=\"Salazar\"
+        BATS=\"L\" THROWS=\"R\" POS=\"P\" JERSEY_NUMBER=\"31\" YEAR=\"2014\" TEAM_ID=\"114\"
+        TEAM_ABBREV=\"CLE\" LEAGUE_ID=\"103\" LEAGUE=\"AL\" LEAGUE_GAMES=\"162\" H=\"0\"
+        AB=\"0\" TB=\"0\" AVG=\".000\" AVG_SORT=\"0.0\" SLG=\".000\" SLG_SORT=\"0.0\"
+        A=\"0\" E=\"0\" PO=\"0\" G=\"0\" R=\"0\" B2=\"0\" B3=\"0\" HR=\"0\" RBI=\"0\"
+        SAC=\"0\" SF=\"0\" HBP=\"0\" BB=\"0\" IBB=\"0\" SO=\"0\" SB=\"0\" CS=\"0\"
+        GIDP=\"0\" OPS=\".000\" OPS_SORT=\"0.0\" OBP=\".000\" OBP_SORT=\"0.0\" NP=\"0\"
+        GO=\"0\" AO=\"0\" TPA=\"0\" OF_A=\"0\" PH_AB=\"0\" PH_H=\"0\" PH_HR=\"0\"
+        PH_RBI=\"0\" LAST10_AB=\"0\" LAST10_H=\"0\" LAST10_HR=\"0\" LAST10_RBI=\"0\"/><batter
+        id=\"592102\" name=\"Allen, Cody\" ACTIVE_SW=\"Y\" STATUS_CD=\"A\" LAST_NAME=\"Allen\"
+        NAME_DISPLAY_LAST_FIRST=\"Allen, Cody\" NAME_DISPLAY_FIRST_LAST=\"Cody Allen\"
+        NAME_DISPLAY_ROSTER=\"Allen\" BATS=\"R\" THROWS=\"R\" POS=\"P\" JERSEY_NUMBER=\"37\"
+        YEAR=\"2014\" TEAM_ID=\"114\" TEAM_ABBREV=\"CLE\" LEAGUE_ID=\"103\" LEAGUE=\"AL\"
+        LEAGUE_GAMES=\"162\" H=\"0\" AB=\"0\" TB=\"0\" AVG=\".000\" AVG_SORT=\"0.0\"
+        SLG=\".000\" SLG_SORT=\"0.0\" A=\"0\" E=\"0\" PO=\"0\" G=\"0\" R=\"0\" B2=\"0\"
+        B3=\"0\" HR=\"0\" RBI=\"0\" SAC=\"0\" SF=\"0\" HBP=\"0\" BB=\"0\" IBB=\"0\"
+        SO=\"0\" SB=\"0\" CS=\"0\" GIDP=\"0\" OPS=\".000\" OPS_SORT=\"0.0\" OBP=\".000\"
+        OBP_SORT=\"0.0\" NP=\"0\" GO=\"0\" AO=\"0\" TPA=\"0\" OF_A=\"0\" PH_AB=\"0\"
+        PH_H=\"0\" PH_HR=\"0\" PH_RBI=\"0\" LAST10_AB=\"0\" LAST10_H=\"0\" LAST10_HR=\"0\"
+        LAST10_RBI=\"0\"/><batter id=\"475416\" name=\"Masterson, Justin\" ACTIVE_SW=\"Y\"
+        STATUS_CD=\"A\" LAST_NAME=\"Masterson\" NAME_DISPLAY_LAST_FIRST=\"Masterson,
+        Justin\" NAME_DISPLAY_FIRST_LAST=\"Justin Masterson\" NAME_DISPLAY_ROSTER=\"Masterson\"
+        BATS=\"R\" THROWS=\"R\" POS=\"P\" JERSEY_NUMBER=\"63\" YEAR=\"2014\" TEAM_ID=\"114\"
+        TEAM_ABBREV=\"CLE\" LEAGUE_ID=\"103\" LEAGUE=\"AL\" LEAGUE_GAMES=\"162\" H=\"0\"
+        AB=\"0\" TB=\"0\" AVG=\".000\" AVG_SORT=\"0.0\" SLG=\".000\" SLG_SORT=\"0.0\"
+        A=\"4\" E=\"0\" PO=\"0\" G=\"0\" R=\"0\" B2=\"0\" B3=\"0\" HR=\"0\" RBI=\"0\"
+        SAC=\"0\" SF=\"0\" HBP=\"0\" BB=\"0\" IBB=\"0\" SO=\"0\" SB=\"0\" CS=\"0\"
+        GIDP=\"0\" OPS=\".000\" OPS_SORT=\"0.0\" OBP=\".000\" OBP_SORT=\"0.0\" NP=\"0\"
+        GO=\"0\" AO=\"0\" TPA=\"0\" OF_A=\"0\" PH_AB=\"0\" PH_H=\"0\" PH_HR=\"0\"
+        PH_RBI=\"0\" LAST10_AB=\"0\" LAST10_H=\"0\" LAST10_HR=\"0\" LAST10_RBI=\"0\"/><batter
+        id=\"114739\" name=\"Giambi, Jason\" ACTIVE_SW=\"Y\" STATUS_CD=\"A\" LAST_NAME=\"Giambi\"
+        NAME_DISPLAY_LAST_FIRST=\"Giambi, Jason\" NAME_DISPLAY_FIRST_LAST=\"Jason
+        Giambi\" NAME_DISPLAY_ROSTER=\"Giambi\" BATS=\"L\" THROWS=\"R\" POS=\"D\"
+        JERSEY_NUMBER=\"25\" YEAR=\"2014\" TEAM_ID=\"114\" TEAM_ABBREV=\"CLE\" LEAGUE_ID=\"103\"
+        LEAGUE=\"AL\" LEAGUE_GAMES=\"162\" H=\"0\" AB=\"0\" TB=\"0\" AVG=\".000\"
+        AVG_SORT=\"0.0\" SLG=\".000\" SLG_SORT=\"0.0\" A=\"0\" E=\"0\" PO=\"0\" G=\"0\"
+        R=\"0\" B2=\"0\" B3=\"0\" HR=\"0\" RBI=\"0\" SAC=\"0\" SF=\"0\" HBP=\"0\"
+        BB=\"0\" IBB=\"0\" SO=\"0\" SB=\"0\" CS=\"0\" GIDP=\"0\" OPS=\".000\" OPS_SORT=\"0.0\"
+        OBP=\".000\" OBP_SORT=\"0.0\" NP=\"0\" GO=\"0\" AO=\"0\" TPA=\"0\" OF_A=\"0\"
+        PH_AB=\"0\" PH_H=\"0\" PH_HR=\"0\" PH_RBI=\"0\" LAST10_AB=\"0\" LAST10_H=\"0\"
+        LAST10_HR=\"0\" LAST10_RBI=\"0\"/><batter id=\"425786\" name=\"Atchison, Scott\"
+        ACTIVE_SW=\"Y\" STATUS_CD=\"A\" LAST_NAME=\"Atchison\" NAME_DISPLAY_LAST_FIRST=\"Atchison,
+        Scott\" NAME_DISPLAY_FIRST_LAST=\"Scott Atchison\" NAME_DISPLAY_ROSTER=\"Atchison\"
+        BATS=\"R\" THROWS=\"R\" POS=\"P\" JERSEY_NUMBER=\"48\" YEAR=\"2014\" TEAM_ID=\"114\"
+        TEAM_ABBREV=\"CLE\" LEAGUE_ID=\"103\" LEAGUE=\"AL\" LEAGUE_GAMES=\"162\" H=\"0\"
+        AB=\"0\" TB=\"0\" AVG=\".000\" AVG_SORT=\"0.0\" SLG=\".000\" SLG_SORT=\"0.0\"
+        A=\"7\" E=\"0\" PO=\"0\" G=\"0\" R=\"0\" B2=\"0\" B3=\"0\" HR=\"0\" RBI=\"0\"
+        SAC=\"0\" SF=\"0\" HBP=\"0\" BB=\"0\" IBB=\"0\" SO=\"0\" SB=\"0\" CS=\"0\"
+        GIDP=\"0\" OPS=\".000\" OPS_SORT=\"0.0\" OBP=\".000\" OBP_SORT=\"0.0\" NP=\"0\"
+        GO=\"0\" AO=\"0\" TPA=\"0\" OF_A=\"0\" PH_AB=\"0\" PH_H=\"0\" PH_HR=\"0\"
+        PH_RBI=\"0\" LAST10_AB=\"0\" LAST10_H=\"0\" LAST10_HR=\"0\" LAST10_RBI=\"0\"/><batter
+        id=\"489189\" name=\"Outman, Josh\" ACTIVE_SW=\"Y\" STATUS_CD=\"A\" LAST_NAME=\"Outman\"
+        NAME_DISPLAY_LAST_FIRST=\"Outman, Josh\" NAME_DISPLAY_FIRST_LAST=\"Josh Outman\"
+        NAME_DISPLAY_ROSTER=\"Outman\" BATS=\"L\" THROWS=\"L\" POS=\"P\" JERSEY_NUMBER=\"88\"
+        YEAR=\"2014\" TEAM_ID=\"114\" TEAM_ABBREV=\"CLE\" LEAGUE_ID=\"103\" LEAGUE=\"AL\"
+        LEAGUE_GAMES=\"162\" H=\"0\" AB=\"0\" TB=\"0\" AVG=\".000\" AVG_SORT=\"0.0\"
+        SLG=\".000\" SLG_SORT=\"0.0\" A=\"1\" E=\"0\" PO=\"0\" G=\"0\" R=\"0\" B2=\"0\"
+        B3=\"0\" HR=\"0\" RBI=\"0\" SAC=\"0\" SF=\"0\" HBP=\"0\" BB=\"0\" IBB=\"0\"
+        SO=\"0\" SB=\"0\" CS=\"0\" GIDP=\"0\" OPS=\".000\" OPS_SORT=\"0.0\" OBP=\".000\"
+        OBP_SORT=\"0.0\" NP=\"0\" GO=\"0\" AO=\"0\" TPA=\"0\" OF_A=\"0\" PH_AB=\"0\"
+        PH_H=\"0\" PH_HR=\"0\" PH_RBI=\"0\" LAST10_AB=\"0\" LAST10_H=\"0\" LAST10_HR=\"0\"
+        LAST10_RBI=\"0\"/><batter id=\"446372\" name=\"Kluber, Corey\" ACTIVE_SW=\"Y\"
+        STATUS_CD=\"A\" LAST_NAME=\"Kluber\" NAME_DISPLAY_LAST_FIRST=\"Kluber, Corey\"
+        NAME_DISPLAY_FIRST_LAST=\"Corey Kluber\" NAME_DISPLAY_ROSTER=\"Kluber\" BATS=\"R\"
+        THROWS=\"R\" POS=\"P\" JERSEY_NUMBER=\"28\" YEAR=\"2014\" TEAM_ID=\"114\"
+        TEAM_ABBREV=\"CLE\" LEAGUE_ID=\"103\" LEAGUE=\"AL\" LEAGUE_GAMES=\"162\" H=\"0\"
+        AB=\"0\" TB=\"0\" AVG=\".000\" AVG_SORT=\"0.0\" SLG=\".000\" SLG_SORT=\"0.0\"
+        A=\"3\" E=\"0\" PO=\"0\" G=\"0\" R=\"0\" B2=\"0\" B3=\"0\" HR=\"0\" RBI=\"0\"
+        SAC=\"0\" SF=\"0\" HBP=\"0\" BB=\"0\" IBB=\"0\" SO=\"0\" SB=\"0\" CS=\"0\"
+        GIDP=\"0\" OPS=\".000\" OPS_SORT=\"0.0\" OBP=\".000\" OBP_SORT=\"0.0\" NP=\"0\"
+        GO=\"0\" AO=\"0\" TPA=\"0\" OF_A=\"0\" PH_AB=\"0\" PH_H=\"0\" PH_HR=\"0\"
+        PH_RBI=\"0\" LAST10_AB=\"0\" LAST10_H=\"0\" LAST10_HR=\"0\" LAST10_RBI=\"0\"/><batter
+        id=\"467793\" name=\"Santana, Carlos\" ACTIVE_SW=\"Y\" STATUS_CD=\"A\" LAST_NAME=\"Santana\"
+        NAME_DISPLAY_LAST_FIRST=\"Santana, Carlos\" NAME_DISPLAY_FIRST_LAST=\"Carlos
+        Santana\" NAME_DISPLAY_ROSTER=\"Santana, C\" BATS=\"S\" THROWS=\"R\" POS=\"3B\"
+        JERSEY_NUMBER=\"41\" YEAR=\"2014\" TEAM_ID=\"114\" TEAM_ABBREV=\"CLE\" LEAGUE_ID=\"103\"
+        LEAGUE=\"AL\" LEAGUE_GAMES=\"162\" H=\"9\" AB=\"59\" TB=\"14\" AVG=\".153\"
+        AVG_SORT=\"0.15254237\" SLG=\".237\" SLG_SORT=\"0.23728813\" A=\"17\" E=\"1\"
+        PO=\"0\" G=\"17\" R=\"7\" B2=\"2\" B3=\"0\" HR=\"1\" RBI=\"3\" SAC=\"0\" SF=\"0\"
+        HBP=\"0\" BB=\"16\" IBB=\"1\" SO=\"13\" SB=\"0\" CS=\"0\" GIDP=\"7\" OPS=\".570\"
+        OPS_SORT=\"0.5706215\" OBP=\".333\" OBP_SORT=\"0.33333334\" NP=\"362\" GO=\"29\"
+        AO=\"15\" TPA=\"75\" OF_A=\"0\" PH_AB=\"0\" PH_H=\"0\" PH_HR=\"0\" PH_RBI=\"0\"
+        LAST10_AB=\"40\" LAST10_H=\"3\" LAST10_HR=\"1\" LAST10_RBI=\"2\"/><batter
+        id=\"543401\" name=\"Kipnis, Jason\" ACTIVE_SW=\"Y\" STATUS_CD=\"A\" LAST_NAME=\"Kipnis\"
+        NAME_DISPLAY_LAST_FIRST=\"Kipnis, Jason\" NAME_DISPLAY_FIRST_LAST=\"Jason
+        Kipnis\" NAME_DISPLAY_ROSTER=\"Kipnis\" BATS=\"L\" THROWS=\"R\" POS=\"2B\"
+        JERSEY_NUMBER=\"22\" YEAR=\"2014\" TEAM_ID=\"114\" TEAM_ABBREV=\"CLE\" LEAGUE_ID=\"103\"
+        LEAGUE=\"AL\" LEAGUE_GAMES=\"162\" H=\"14\" AB=\"58\" TB=\"23\" AVG=\".241\"
+        AVG_SORT=\"0.2413793\" SLG=\".397\" SLG_SORT=\"0.39655173\" A=\"34\" E=\"2\"
+        PO=\"0\" G=\"17\" R=\"8\" B2=\"3\" B3=\"0\" HR=\"2\" RBI=\"7\" SAC=\"0\" SF=\"1\"
+        HBP=\"1\" BB=\"13\" IBB=\"0\" SO=\"12\" SB=\"3\" CS=\"0\" GIDP=\"1\" OPS=\".781\"
+        OPS_SORT=\"0.78011334\" OBP=\".384\" OBP_SORT=\"0.38356164\" NP=\"294\" GO=\"16\"
+        AO=\"18\" TPA=\"73\" OF_A=\"0\" PH_AB=\"0\" PH_H=\"0\" PH_HR=\"0\" PH_RBI=\"0\"
+        LAST10_AB=\"36\" LAST10_H=\"9\" LAST10_HR=\"2\" LAST10_RBI=\"4\"/><batter
+        id=\"471911\" name=\"Carrasco, Carlos\" ACTIVE_SW=\"Y\" STATUS_CD=\"A\" LAST_NAME=\"Carrasco\"
+        NAME_DISPLAY_LAST_FIRST=\"Carrasco, Carlos\" NAME_DISPLAY_FIRST_LAST=\"Carlos
+        Carrasco\" NAME_DISPLAY_ROSTER=\"Carrasco\" BATS=\"R\" THROWS=\"R\" POS=\"P\"
+        JERSEY_NUMBER=\"59\" YEAR=\"2014\" TEAM_ID=\"114\" TEAM_ABBREV=\"CLE\" LEAGUE_ID=\"103\"
+        LEAGUE=\"AL\" LEAGUE_GAMES=\"162\" H=\"0\" AB=\"0\" TB=\"0\" AVG=\".000\"
+        AVG_SORT=\"0.0\" SLG=\".000\" SLG_SORT=\"0.0\" A=\"1\" E=\"0\" PO=\"0\" G=\"0\"
+        R=\"0\" B2=\"0\" B3=\"0\" HR=\"0\" RBI=\"0\" SAC=\"0\" SF=\"0\" HBP=\"0\"
+        BB=\"0\" IBB=\"0\" SO=\"0\" SB=\"0\" CS=\"0\" GIDP=\"0\" OPS=\".000\" OPS_SORT=\"0.0\"
+        OBP=\".000\" OBP_SORT=\"0.0\" NP=\"0\" GO=\"0\" AO=\"0\" TPA=\"0\" OF_A=\"0\"
+        PH_AB=\"0\" PH_H=\"0\" PH_HR=\"0\" PH_RBI=\"0\" LAST10_AB=\"0\" LAST10_H=\"0\"
+        LAST10_HR=\"0\" LAST10_RBI=\"0\"/><batter id=\"502083\" name=\"McAllister,
+        Zach\" ACTIVE_SW=\"Y\" STATUS_CD=\"A\" LAST_NAME=\"McAllister\" NAME_DISPLAY_LAST_FIRST=\"McAllister,
+        Zach\" NAME_DISPLAY_FIRST_LAST=\"Zach McAllister\" NAME_DISPLAY_ROSTER=\"McAllister\"
+        BATS=\"R\" THROWS=\"R\" POS=\"P\" JERSEY_NUMBER=\"34\" YEAR=\"2014\" TEAM_ID=\"114\"
+        TEAM_ABBREV=\"CLE\" LEAGUE_ID=\"103\" LEAGUE=\"AL\" LEAGUE_GAMES=\"162\" H=\"0\"
+        AB=\"0\" TB=\"0\" AVG=\".000\" AVG_SORT=\"0.0\" SLG=\".000\" SLG_SORT=\"0.0\"
+        A=\"1\" E=\"0\" PO=\"0\" G=\"0\" R=\"0\" B2=\"0\" B3=\"0\" HR=\"0\" RBI=\"0\"
+        SAC=\"0\" SF=\"0\" HBP=\"0\" BB=\"0\" IBB=\"0\" SO=\"0\" SB=\"0\" CS=\"0\"
+        GIDP=\"0\" OPS=\".000\" OPS_SORT=\"0.0\" OBP=\".000\" OBP_SORT=\"0.0\" NP=\"0\"
+        GO=\"0\" AO=\"0\" TPA=\"0\" OF_A=\"0\" PH_AB=\"0\" PH_H=\"0\" PH_HR=\"0\"
+        PH_RBI=\"0\" LAST10_AB=\"0\" LAST10_H=\"0\" LAST10_HR=\"0\" LAST10_RBI=\"0\"/><batter
+        id=\"446099\" name=\"Axford, John\" ACTIVE_SW=\"Y\" STATUS_CD=\"A\" LAST_NAME=\"Axford\"
+        NAME_DISPLAY_LAST_FIRST=\"Axford, John\" NAME_DISPLAY_FIRST_LAST=\"John Axford\"
+        NAME_DISPLAY_ROSTER=\"Axford\" BATS=\"R\" THROWS=\"R\" POS=\"P\" JERSEY_NUMBER=\"44\"
+        YEAR=\"2014\" TEAM_ID=\"114\" TEAM_ABBREV=\"CLE\" LEAGUE_ID=\"103\" LEAGUE=\"AL\"
+        LEAGUE_GAMES=\"162\" H=\"0\" AB=\"0\" TB=\"0\" AVG=\".000\" AVG_SORT=\"0.0\"
+        SLG=\".000\" SLG_SORT=\"0.0\" A=\"0\" E=\"0\" PO=\"0\" G=\"0\" R=\"0\" B2=\"0\"
+        B3=\"0\" HR=\"0\" RBI=\"0\" SAC=\"0\" SF=\"0\" HBP=\"0\" BB=\"0\" IBB=\"0\"
+        SO=\"0\" SB=\"0\" CS=\"0\" GIDP=\"0\" OPS=\".000\" OPS_SORT=\"0.0\" OBP=\".000\"
+        OBP_SORT=\"0.0\" NP=\"0\" GO=\"0\" AO=\"0\" TPA=\"0\" OF_A=\"0\" PH_AB=\"0\"
+        PH_H=\"0\" PH_HR=\"0\" PH_RBI=\"0\" LAST10_AB=\"0\" LAST10_H=\"0\" LAST10_HR=\"0\"
+        LAST10_RBI=\"0\"/><batter id=\"452678\" name=\"Cabrera, Asdrubal\" ACTIVE_SW=\"Y\"
+        STATUS_CD=\"A\" LAST_NAME=\"Cabrera\" NAME_DISPLAY_LAST_FIRST=\"Cabrera, Asdrubal\"
+        NAME_DISPLAY_FIRST_LAST=\"Asdrubal Cabrera\" NAME_DISPLAY_ROSTER=\"Cabrera,
+        A\" BATS=\"S\" THROWS=\"R\" POS=\"SS\" JERSEY_NUMBER=\"13\" YEAR=\"2014\"
+        TEAM_ID=\"114\" TEAM_ABBREV=\"CLE\" LEAGUE_ID=\"103\" LEAGUE=\"AL\" LEAGUE_GAMES=\"162\"
+        H=\"14\" AB=\"63\" TB=\"24\" AVG=\".222\" AVG_SORT=\"0.22222222\" SLG=\".381\"
+        SLG_SORT=\"0.3809524\" A=\"38\" E=\"2\" PO=\"0\" G=\"17\" R=\"9\" B2=\"5\"
+        B3=\"1\" HR=\"1\" RBI=\"5\" SAC=\"0\" SF=\"0\" HBP=\"1\" BB=\"5\" IBB=\"1\"
+        SO=\"13\" SB=\"0\" CS=\"0\" GIDP=\"2\" OPS=\".671\" OPS_SORT=\"0.6708075\"
+        OBP=\".290\" OBP_SORT=\"0.28985506\" NP=\"276\" GO=\"20\" AO=\"18\" TPA=\"69\"
+        OF_A=\"0\" PH_AB=\"1\" PH_H=\"0\" PH_HR=\"0\" PH_RBI=\"0\" LAST10_AB=\"44\"
+        LAST10_H=\"11\" LAST10_HR=\"1\" LAST10_RBI=\"4\"/><batter id=\"502028\" name=\"Wood,
+        Blake\" ACTIVE_SW=\"Y\" STATUS_CD=\"A\" LAST_NAME=\"Wood\" NAME_DISPLAY_LAST_FIRST=\"Wood,
+        Blake\" NAME_DISPLAY_FIRST_LAST=\"Blake Wood\" NAME_DISPLAY_ROSTER=\"Wood,
+        Bl\" BATS=\"R\" THROWS=\"R\" POS=\"P\" JERSEY_NUMBER=\"49\" YEAR=\"2014\"
+        TEAM_ID=\"114\" TEAM_ABBREV=\"CLE\" LEAGUE_ID=\"103\" LEAGUE=\"AL\" LEAGUE_GAMES=\"162\"
+        H=\"0\" AB=\"0\" TB=\"0\" AVG=\".000\" AVG_SORT=\"0.0\" SLG=\".000\" SLG_SORT=\"0.0\"
+        A=\"1\" E=\"0\" PO=\"0\" G=\"0\" R=\"0\" B2=\"0\" B3=\"0\" HR=\"0\" RBI=\"0\"
+        SAC=\"0\" SF=\"0\" HBP=\"0\" BB=\"0\" IBB=\"0\" SO=\"0\" SB=\"0\" CS=\"0\"
+        GIDP=\"0\" OPS=\".000\" OPS_SORT=\"0.0\" OBP=\".000\" OBP_SORT=\"0.0\" NP=\"0\"
+        GO=\"0\" AO=\"0\" TPA=\"0\" OF_A=\"0\" PH_AB=\"0\" PH_H=\"0\" PH_HR=\"0\"
+        PH_RBI=\"0\" LAST10_AB=\"0\" LAST10_H=\"0\" LAST10_HR=\"0\" LAST10_RBI=\"0\"/><batter
+        id=\"543228\" name=\"Gomes, Yan\" ACTIVE_SW=\"Y\" STATUS_CD=\"A\" LAST_NAME=\"Gomes\"
+        NAME_DISPLAY_LAST_FIRST=\"Gomes, Yan\" NAME_DISPLAY_FIRST_LAST=\"Yan Gomes\"
+        NAME_DISPLAY_ROSTER=\"Gomes, Y\" BATS=\"R\" THROWS=\"R\" POS=\"C\" JERSEY_NUMBER=\"10\"
+        YEAR=\"2014\" TEAM_ID=\"114\" TEAM_ABBREV=\"CLE\" LEAGUE_ID=\"103\" LEAGUE=\"AL\"
+        LEAGUE_GAMES=\"162\" H=\"13\" AB=\"53\" TB=\"22\" AVG=\".245\" AVG_SORT=\"0.24528302\"
+        SLG=\".415\" SLG_SORT=\"0.41509435\" A=\"9\" E=\"5\" PO=\"0\" G=\"16\" R=\"7\"
+        B2=\"1\" B3=\"1\" HR=\"2\" RBI=\"6\" SAC=\"0\" SF=\"1\" HBP=\"1\" BB=\"4\"
+        IBB=\"0\" SO=\"15\" SB=\"0\" CS=\"0\" GIDP=\"2\" OPS=\".720\" OPS_SORT=\"0.7201791\"
+        OBP=\".305\" OBP_SORT=\"0.30508474\" NP=\"265\" GO=\"18\" AO=\"10\" TPA=\"59\"
+        OF_A=\"0\" PH_AB=\"0\" PH_H=\"0\" PH_HR=\"0\" PH_RBI=\"0\" LAST10_AB=\"40\"
+        LAST10_H=\"10\" LAST10_HR=\"1\" LAST10_RBI=\"4\"/><batter id=\"488726\" name=\"Brantley,
+        Michael\" ACTIVE_SW=\"Y\" STATUS_CD=\"A\" LAST_NAME=\"Brantley\" NAME_DISPLAY_LAST_FIRST=\"Brantley,
+        Michael\" NAME_DISPLAY_FIRST_LAST=\"Michael Brantley\" NAME_DISPLAY_ROSTER=\"Brantley\"
+        BATS=\"L\" THROWS=\"L\" POS=\"LF\" JERSEY_NUMBER=\"23\" YEAR=\"2014\" TEAM_ID=\"114\"
+        TEAM_ABBREV=\"CLE\" LEAGUE_ID=\"103\" LEAGUE=\"AL\" LEAGUE_GAMES=\"162\" H=\"17\"
+        AB=\"64\" TB=\"26\" AVG=\".266\" AVG_SORT=\"0.265625\" SLG=\".406\" SLG_SORT=\"0.40625\"
+        A=\"1\" E=\"1\" PO=\"0\" G=\"17\" R=\"7\" B2=\"3\" B3=\"0\" HR=\"2\" RBI=\"14\"
+        SAC=\"0\" SF=\"0\" HBP=\"1\" BB=\"7\" IBB=\"0\" SO=\"6\" SB=\"2\" CS=\"0\"
+        GIDP=\"3\" OPS=\".753\" OPS_SORT=\"0.7534722\" OBP=\".347\" OBP_SORT=\"0.3472222\"
+        NP=\"248\" GO=\"30\" AO=\"14\" TPA=\"72\" OF_A=\"0\" PH_AB=\"0\" PH_H=\"0\"
+        PH_HR=\"0\" PH_RBI=\"0\" LAST10_AB=\"40\" LAST10_H=\"8\" LAST10_HR=\"2\" LAST10_RBI=\"8\"/><batter
+        id=\"502082\" name=\"Chisenhall, Lonnie\" ACTIVE_SW=\"Y\" STATUS_CD=\"A\"
+        LAST_NAME=\"Chisenhall\" NAME_DISPLAY_LAST_FIRST=\"Chisenhall, Lonnie\" NAME_DISPLAY_FIRST_LAST=\"Lonnie
+        Chisenhall\" NAME_DISPLAY_ROSTER=\"Chisenhall\" BATS=\"L\" THROWS=\"R\" POS=\"3B\"
+        JERSEY_NUMBER=\"8\" YEAR=\"2014\" TEAM_ID=\"114\" TEAM_ABBREV=\"CLE\" LEAGUE_ID=\"103\"
+        LEAGUE=\"AL\" LEAGUE_GAMES=\"162\" H=\"13\" AB=\"27\" TB=\"18\" AVG=\".481\"
+        AVG_SORT=\"0.4814815\" SLG=\".667\" SLG_SORT=\"0.6666667\" A=\"2\" E=\"0\"
+        PO=\"0\" G=\"8\" R=\"5\" B2=\"5\" B3=\"0\" HR=\"0\" RBI=\"0\" SAC=\"0\" SF=\"0\"
+        HBP=\"0\" BB=\"1\" IBB=\"0\" SO=\"7\" SB=\"1\" CS=\"0\" GIDP=\"0\" OPS=\"1.167\"
+        OPS_SORT=\"1.1666666\" OBP=\".500\" OBP_SORT=\"0.5\" NP=\"105\" GO=\"1\" AO=\"6\"
+        TPA=\"28\" OF_A=\"0\" PH_AB=\"0\" PH_H=\"0\" PH_HR=\"0\" PH_RBI=\"0\" LAST10_AB=\"27\"
+        LAST10_H=\"13\" LAST10_HR=\"0\" LAST10_RBI=\"0\"/><batter id=\"519240\" name=\"Rzepczynski,
+        Marc\" ACTIVE_SW=\"Y\" STATUS_CD=\"A\" LAST_NAME=\"Rzepczynski\" NAME_DISPLAY_LAST_FIRST=\"Rzepczynski,
+        Marc\" NAME_DISPLAY_FIRST_LAST=\"Marc Rzepczynski\" NAME_DISPLAY_ROSTER=\"Rzepczynski\"
+        BATS=\"L\" THROWS=\"L\" POS=\"P\" JERSEY_NUMBER=\"35\" YEAR=\"2014\" TEAM_ID=\"114\"
+        TEAM_ABBREV=\"CLE\" LEAGUE_ID=\"103\" LEAGUE=\"AL\" LEAGUE_GAMES=\"162\" H=\"0\"
+        AB=\"0\" TB=\"0\" AVG=\".000\" AVG_SORT=\"0.0\" SLG=\".000\" SLG_SORT=\"0.0\"
+        A=\"0\" E=\"0\" PO=\"0\" G=\"0\" R=\"0\" B2=\"0\" B3=\"0\" HR=\"0\" RBI=\"0\"
+        SAC=\"0\" SF=\"0\" HBP=\"0\" BB=\"0\" IBB=\"0\" SO=\"0\" SB=\"0\" CS=\"0\"
+        GIDP=\"0\" OPS=\".000\" OPS_SORT=\"0.0\" OBP=\".000\" OBP_SORT=\"0.0\" NP=\"0\"
+        GO=\"0\" AO=\"0\" TPA=\"0\" OF_A=\"0\" PH_AB=\"0\" PH_H=\"0\" PH_HR=\"0\"
+        PH_RBI=\"0\" LAST10_AB=\"0\" LAST10_H=\"0\" LAST10_HR=\"0\" LAST10_RBI=\"0\"/><batter
+        id=\"471107\" name=\"Johnson, Elliot\" ACTIVE_SW=\"Y\" STATUS_CD=\"A\" LAST_NAME=\"Johnson\"
+        NAME_DISPLAY_LAST_FIRST=\"Johnson, Elliot\" NAME_DISPLAY_FIRST_LAST=\"Elliot
+        Johnson\" NAME_DISPLAY_ROSTER=\"Johnson, E\" BATS=\"S\" THROWS=\"R\" POS=\"2B\"
+        JERSEY_NUMBER=\"30\" YEAR=\"2014\" TEAM_ID=\"114\" TEAM_ABBREV=\"CLE\" LEAGUE_ID=\"103\"
+        LEAGUE=\"AL\" LEAGUE_GAMES=\"162\" H=\"1\" AB=\"11\" TB=\"2\" AVG=\".091\"
+        AVG_SORT=\"0.09090909\" SLG=\".182\" SLG_SORT=\"0.18181819\" A=\"0\" E=\"0\"
+        PO=\"0\" G=\"4\" R=\"1\" B2=\"1\" B3=\"0\" HR=\"0\" RBI=\"0\" SAC=\"1\" SF=\"0\"
+        HBP=\"0\" BB=\"0\" IBB=\"0\" SO=\"4\" SB=\"0\" CS=\"0\" GIDP=\"0\" OPS=\".273\"
+        OPS_SORT=\"0.27272728\" OBP=\".091\" OBP_SORT=\"0.09090909\" NP=\"45\" GO=\"4\"
+        AO=\"3\" TPA=\"12\" OF_A=\"0\" PH_AB=\"1\" PH_H=\"0\" PH_HR=\"0\" PH_RBI=\"0\"
+        LAST10_AB=\"11\" LAST10_H=\"1\" LAST10_HR=\"0\" LAST10_RBI=\"0\"/><batter
+        id=\"456422\" name=\"Bourn, Michael\" ACTIVE_SW=\"Y\" STATUS_CD=\"A\" LAST_NAME=\"Bourn\"
+        NAME_DISPLAY_LAST_FIRST=\"Bourn, Michael\" NAME_DISPLAY_FIRST_LAST=\"Michael
+        Bourn\" NAME_DISPLAY_ROSTER=\"Bourn\" BATS=\"L\" THROWS=\"R\" POS=\"CF\" JERSEY_NUMBER=\"24\"
+        YEAR=\"2014\" TEAM_ID=\"114\" TEAM_ABBREV=\"CLE\" LEAGUE_ID=\"103\" LEAGUE=\"AL\"
+        LEAGUE_GAMES=\"162\" H=\"1\" AB=\"13\" TB=\"1\" AVG=\".077\" AVG_SORT=\"0.07692308\"
+        SLG=\".077\" SLG_SORT=\"0.07692308\" A=\"0\" E=\"1\" PO=\"0\" G=\"3\" R=\"2\"
+        B2=\"0\" B3=\"0\" HR=\"0\" RBI=\"0\" SAC=\"0\" SF=\"0\" HBP=\"0\" BB=\"2\"
+        IBB=\"0\" SO=\"5\" SB=\"1\" CS=\"1\" GIDP=\"0\" OPS=\".277\" OPS_SORT=\"0.2769231\"
+        OBP=\".200\" OBP_SORT=\"0.2\" NP=\"57\" GO=\"5\" AO=\"2\" TPA=\"15\" OF_A=\"0\"
+        PH_AB=\"0\" PH_H=\"0\" PH_HR=\"0\" PH_RBI=\"0\" LAST10_AB=\"13\" LAST10_H=\"1\"
+        LAST10_HR=\"0\" LAST10_RBI=\"0\"/><batter id=\"430897\" name=\"Swisher, Nick\"
+        ACTIVE_SW=\"Y\" STATUS_CD=\"A\" LAST_NAME=\"Swisher\" NAME_DISPLAY_LAST_FIRST=\"Swisher,
+        Nick\" NAME_DISPLAY_FIRST_LAST=\"Nick Swisher\" NAME_DISPLAY_ROSTER=\"Swisher\"
+        BATS=\"S\" THROWS=\"L\" POS=\"1B\" JERSEY_NUMBER=\"33\" YEAR=\"2014\" TEAM_ID=\"114\"
+        TEAM_ABBREV=\"CLE\" LEAGUE_ID=\"103\" LEAGUE=\"AL\" LEAGUE_GAMES=\"162\" H=\"12\"
+        AB=\"69\" TB=\"19\" AVG=\".174\" AVG_SORT=\"0.17391305\" SLG=\".275\" SLG_SORT=\"0.2753623\"
+        A=\"9\" E=\"2\" PO=\"0\" G=\"17\" R=\"7\" B2=\"1\" B3=\"0\" HR=\"2\" RBI=\"7\"
+        SAC=\"0\" SF=\"0\" HBP=\"0\" BB=\"9\" IBB=\"0\" SO=\"18\" SB=\"0\" CS=\"0\"
+        GIDP=\"1\" OPS=\".544\" OPS_SORT=\"0.5445931\" OBP=\".269\" OBP_SORT=\"0.26923078\"
+        NP=\"337\" GO=\"17\" AO=\"23\" TPA=\"78\" OF_A=\"0\" PH_AB=\"0\" PH_H=\"0\"
+        PH_HR=\"0\" PH_RBI=\"0\" LAST10_AB=\"43\" LAST10_H=\"6\" LAST10_HR=\"1\" LAST10_RBI=\"3\"/><batter
+        id=\"430605\" name=\"Raburn, Ryan\" ACTIVE_SW=\"Y\" STATUS_CD=\"A\" LAST_NAME=\"Raburn\"
+        NAME_DISPLAY_LAST_FIRST=\"Raburn, Ryan\" NAME_DISPLAY_FIRST_LAST=\"Ryan Raburn\"
+        NAME_DISPLAY_ROSTER=\"Raburn\" BATS=\"R\" THROWS=\"R\" POS=\"RF\" JERSEY_NUMBER=\"9\"
+        YEAR=\"2014\" TEAM_ID=\"114\" TEAM_ABBREV=\"CLE\" LEAGUE_ID=\"103\" LEAGUE=\"AL\"
+        LEAGUE_GAMES=\"162\" H=\"9\" AB=\"41\" TB=\"10\" AVG=\".220\" AVG_SORT=\"0.2195122\"
+        SLG=\".244\" SLG_SORT=\"0.24390244\" A=\"1\" E=\"0\" PO=\"0\" G=\"12\" R=\"2\"
+        B2=\"1\" B3=\"0\" HR=\"0\" RBI=\"4\" SAC=\"0\" SF=\"1\" HBP=\"0\" BB=\"2\"
+        IBB=\"1\" SO=\"10\" SB=\"0\" CS=\"0\" GIDP=\"2\" OPS=\".494\" OPS_SORT=\"0.49390244\"
+        OBP=\".250\" OBP_SORT=\"0.25\" NP=\"171\" GO=\"15\" AO=\"10\" TPA=\"44\" OF_A=\"0\"
+        PH_AB=\"3\" PH_H=\"0\" PH_HR=\"0\" PH_RBI=\"0\" LAST10_AB=\"37\" LAST10_H=\"8\"
+        LAST10_HR=\"0\" LAST10_RBI=\"4\"/><batter id=\"461815\" name=\"Murphy, David\"
+        ACTIVE_SW=\"Y\" STATUS_CD=\"A\" LAST_NAME=\"Murphy\" NAME_DISPLAY_LAST_FIRST=\"Murphy,
+        David\" NAME_DISPLAY_FIRST_LAST=\"David Murphy\" NAME_DISPLAY_ROSTER=\"Murphy,
+        Dv\" BATS=\"L\" THROWS=\"L\" POS=\"O\" JERSEY_NUMBER=\"7\" YEAR=\"2014\" TEAM_ID=\"114\"
+        TEAM_ABBREV=\"CLE\" LEAGUE_ID=\"103\" LEAGUE=\"AL\" LEAGUE_GAMES=\"162\" H=\"14\"
+        AB=\"48\" TB=\"25\" AVG=\".292\" AVG_SORT=\"0.29166666\" SLG=\".521\" SLG_SORT=\"0.5208333\"
+        A=\"1\" E=\"0\" PO=\"0\" G=\"15\" R=\"7\" B2=\"3\" B3=\"1\" HR=\"2\" RBI=\"12\"
+        SAC=\"0\" SF=\"1\" HBP=\"0\" BB=\"6\" IBB=\"0\" SO=\"7\" SB=\"0\" CS=\"0\"
+        GIDP=\"0\" OPS=\".885\" OPS_SORT=\"0.8844697\" OBP=\".364\" OBP_SORT=\"0.36363637\"
+        NP=\"221\" GO=\"14\" AO=\"14\" TPA=\"55\" OF_A=\"0\" PH_AB=\"0\" PH_H=\"0\"
+        PH_HR=\"0\" PH_RBI=\"0\" LAST10_AB=\"34\" LAST10_H=\"12\" LAST10_HR=\"2\"
+        LAST10_RBI=\"11\"/><batter id=\"547348\" name=\"Lee, C.C.\" ACTIVE_SW=\"Y\"
+        STATUS_CD=\"A\" LAST_NAME=\"Lee\" NAME_DISPLAY_LAST_FIRST=\"Lee, C.C.\" NAME_DISPLAY_FIRST_LAST=\"C.C.
+        Lee\" NAME_DISPLAY_ROSTER=\"Lee\" BATS=\"R\" THROWS=\"R\" POS=\"P\" JERSEY_NUMBER=\"20\"
+        YEAR=\"2014\" TEAM_ID=\"114\" TEAM_ABBREV=\"CLE\" LEAGUE_ID=\"103\" LEAGUE=\"AL\"
+        LEAGUE_GAMES=\"162\" H=\"0\" AB=\"0\" TB=\"0\" AVG=\".000\" AVG_SORT=\"0.0\"
+        SLG=\".000\" SLG_SORT=\"0.0\" A=\"0\" E=\"1\" PO=\"0\" G=\"0\" R=\"0\" B2=\"0\"
+        B3=\"0\" HR=\"0\" RBI=\"0\" SAC=\"0\" SF=\"0\" HBP=\"0\" BB=\"0\" IBB=\"0\"
+        SO=\"0\" SB=\"0\" CS=\"0\" GIDP=\"0\" OPS=\".000\" OPS_SORT=\"0.0\" OBP=\".000\"
+        OBP_SORT=\"0.0\" NP=\"0\" GO=\"0\" AO=\"0\" TPA=\"0\" OF_A=\"0\" PH_AB=\"0\"
+        PH_H=\"0\" PH_HR=\"0\" PH_RBI=\"0\" LAST10_AB=\"0\" LAST10_H=\"0\" LAST10_HR=\"0\"
+        LAST10_RBI=\"0\"/></home_batting><home_pitching IP=\"148.1\" ER=\"70\" ERA=\"4.25\"
+        WHIP=\"1.48\" H=\"151\" R=\"80\" HR=\"11\" HB=\"8\" BB=\"68\" IBB=\"6\" SO=\"156\"
+        WP=\"11\" G=\"17\" GS=\"17\" W=\"7\" L=\"10\" CG=\"0\" GF=\"17\" SHO=\"2\"
+        SV=\"5\" BSV=\"2\" SVO=\"7\"><pitcher id=\"543766\" name=\"Shaw, Bryan\" ACTIVE_SW=\"Y\"
+        STATUS_CD=\"A\" LAST_NAME=\"Shaw\" NAME_DISPLAY_LAST_FIRST=\"Shaw, Bryan\"
+        NAME_DISPLAY_FIRST_LAST=\"Bryan Shaw\" NAME_DISPLAY_ROSTER=\"Shaw\" BATS=\"S\"
+        THROWS=\"R\" POS=\"P\" JERSEY_NUMBER=\"27\" YEAR=\"2014\" TEAM_ID=\"114\"
+        TEAM_ABBREV=\"CLE\" LEAGUE_ID=\"103\" LEAGUE=\"AL\" LEAGUE_GAMES=\"162\" IP=\"7.1\"
+        IP_SORT=\"7.3333335\" ER=\"2\" ERA=\"2.45\" ERA_SORT=\"2.4545455\" H=\"7\"
+        R=\"3\" HR=\"0\" HB=\"0\" BB=\"1\" IBB=\"0\" SO=\"7\" WP=\"1\" AVG=\".250\"
+        AVG_SORT=\"0.25\" SLG=\".321\" SLG_SORT=\"0.32142857\" WHIP=\"1.09\" WHIP_SORT=\"1.0909091\"
+        PCT=\"--\" PCT_SORT=\"--\" AB=\"28\" SF=\"0\" SAC=\"1\" GIDP=\"1\" P_INH_RUNNER=\"0\"
+        P_INH_RUNNER_SCORED=\"0\" AO=\"8\" GO=\"7\" NP=\"114\" BK=\"0\" HLD=\"3\"
+        TPA=\"30\" PO=\"0\" A=\"0\" E=\"0\" G=\"8\" GS=\"0\" W=\"0\" L=\"0\" CG=\"0\"
+        GF=\"0\" SHO=\"0\" SV=\"0\" BSV=\"0\" SVO=\"0\"/><pitcher id=\"517593\" name=\"Salazar,
+        Danny\" ACTIVE_SW=\"Y\" STATUS_CD=\"A\" LAST_NAME=\"Salazar\" NAME_DISPLAY_LAST_FIRST=\"Salazar,
+        Danny\" NAME_DISPLAY_FIRST_LAST=\"Danny Salazar\" NAME_DISPLAY_ROSTER=\"Salazar\"
+        BATS=\"L\" THROWS=\"R\" POS=\"P\" JERSEY_NUMBER=\"31\" YEAR=\"2014\" TEAM_ID=\"114\"
+        TEAM_ABBREV=\"CLE\" LEAGUE_ID=\"103\" LEAGUE=\"AL\" LEAGUE_GAMES=\"162\" IP=\"14.0\"
+        IP_SORT=\"14.0\" ER=\"12\" ERA=\"7.71\" ERA_SORT=\"7.714286\" H=\"19\" R=\"12\"
+        HR=\"4\" HB=\"0\" BB=\"8\" IBB=\"2\" SO=\"17\" WP=\"1\" AVG=\".345\" AVG_SORT=\"0.34545454\"
+        SLG=\".636\" SLG_SORT=\"0.6363636\" WHIP=\"1.93\" WHIP_SORT=\"1.9285715\"
+        PCT=\".000\" PCT_SORT=\"0.0\" AB=\"55\" SF=\"3\" SAC=\"0\" GIDP=\"0\" P_INH_RUNNER=\"0\"
+        P_INH_RUNNER_SCORED=\"0\" AO=\"16\" GO=\"6\" NP=\"270\" BK=\"0\" HLD=\"0\"
+        TPA=\"66\" PO=\"0\" A=\"0\" E=\"0\" G=\"3\" GS=\"3\" W=\"0\" L=\"2\" CG=\"0\"
+        GF=\"0\" SHO=\"0\" SV=\"0\" BSV=\"0\" SVO=\"0\"/><pitcher id=\"592102\" name=\"Allen,
+        Cody\" ACTIVE_SW=\"Y\" STATUS_CD=\"A\" LAST_NAME=\"Allen\" NAME_DISPLAY_LAST_FIRST=\"Allen,
+        Cody\" NAME_DISPLAY_FIRST_LAST=\"Cody Allen\" NAME_DISPLAY_ROSTER=\"Allen\"
+        BATS=\"R\" THROWS=\"R\" POS=\"P\" JERSEY_NUMBER=\"37\" YEAR=\"2014\" TEAM_ID=\"114\"
+        TEAM_ABBREV=\"CLE\" LEAGUE_ID=\"103\" LEAGUE=\"AL\" LEAGUE_GAMES=\"162\" IP=\"6.2\"
+        IP_SORT=\"6.6666665\" ER=\"0\" ERA=\"0.00\" ERA_SORT=\"0.0\" H=\"8\" R=\"1\"
+        HR=\"0\" HB=\"0\" BB=\"3\" IBB=\"1\" SO=\"12\" WP=\"1\" AVG=\".296\" AVG_SORT=\"0.2962963\"
+        SLG=\".370\" SLG_SORT=\"0.37037036\" WHIP=\"1.65\" WHIP_SORT=\"1.65\" PCT=\"1.000\"
+        PCT_SORT=\"1.0\" AB=\"27\" SF=\"0\" SAC=\"0\" GIDP=\"2\" P_INH_RUNNER=\"7\"
+        P_INH_RUNNER_SCORED=\"1\" AO=\"3\" GO=\"4\" NP=\"129\" BK=\"0\" HLD=\"3\"
+        TPA=\"30\" PO=\"0\" A=\"0\" E=\"0\" G=\"9\" GS=\"0\" W=\"2\" L=\"0\" CG=\"0\"
+        GF=\"0\" SHO=\"0\" SV=\"0\" BSV=\"0\" SVO=\"0\"/><pitcher id=\"475416\" name=\"Masterson,
+        Justin\" ACTIVE_SW=\"Y\" STATUS_CD=\"A\" LAST_NAME=\"Masterson\" NAME_DISPLAY_LAST_FIRST=\"Masterson,
+        Justin\" NAME_DISPLAY_FIRST_LAST=\"Justin Masterson\" NAME_DISPLAY_ROSTER=\"Masterson\"
+        BATS=\"R\" THROWS=\"R\" POS=\"P\" JERSEY_NUMBER=\"63\" YEAR=\"2014\" TEAM_ID=\"114\"
+        TEAM_ABBREV=\"CLE\" LEAGUE_ID=\"103\" LEAGUE=\"AL\" LEAGUE_GAMES=\"162\" IP=\"21.2\"
+        IP_SORT=\"21.666666\" ER=\"12\" ERA=\"4.98\" ERA_SORT=\"4.9846153\" H=\"23\"
+        R=\"14\" HR=\"1\" HB=\"3\" BB=\"11\" IBB=\"0\" SO=\"24\" WP=\"3\" AVG=\".271\"
+        AVG_SORT=\"0.27058825\" SLG=\".341\" SLG_SORT=\"0.34117648\" WHIP=\"1.57\"
+        WHIP_SORT=\"1.5692308\" PCT=\"--\" PCT_SORT=\"--\" AB=\"85\" SF=\"0\" SAC=\"2\"
+        GIDP=\"3\" P_INH_RUNNER=\"0\" P_INH_RUNNER_SCORED=\"0\" AO=\"12\" GO=\"28\"
+        NP=\"384\" BK=\"0\" HLD=\"0\" TPA=\"101\" PO=\"0\" A=\"4\" E=\"0\" G=\"4\"
+        GS=\"4\" W=\"0\" L=\"0\" CG=\"0\" GF=\"0\" SHO=\"0\" SV=\"0\" BSV=\"0\" SVO=\"0\"/><pitcher
+        id=\"425786\" name=\"Atchison, Scott\" ACTIVE_SW=\"Y\" STATUS_CD=\"A\" LAST_NAME=\"Atchison\"
+        NAME_DISPLAY_LAST_FIRST=\"Atchison, Scott\" NAME_DISPLAY_FIRST_LAST=\"Scott
+        Atchison\" NAME_DISPLAY_ROSTER=\"Atchison\" BATS=\"R\" THROWS=\"R\" POS=\"P\"
+        JERSEY_NUMBER=\"48\" YEAR=\"2014\" TEAM_ID=\"114\" TEAM_ABBREV=\"CLE\" LEAGUE_ID=\"103\"
+        LEAGUE=\"AL\" LEAGUE_GAMES=\"162\" IP=\"8.1\" IP_SORT=\"8.333333\" ER=\"1\"
+        ERA=\"1.08\" ERA_SORT=\"1.08\" H=\"2\" R=\"1\" HR=\"0\" HB=\"0\" BB=\"1\"
+        IBB=\"0\" SO=\"8\" WP=\"0\" AVG=\".074\" AVG_SORT=\"0.074074075\" SLG=\".074\"
+        SLG_SORT=\"0.074074075\" WHIP=\"0.36\" WHIP_SORT=\"0.36\" PCT=\"--\" PCT_SORT=\"--\"
+        AB=\"27\" SF=\"0\" SAC=\"0\" GIDP=\"0\" P_INH_RUNNER=\"4\" P_INH_RUNNER_SCORED=\"0\"
+        AO=\"3\" GO=\"14\" NP=\"102\" BK=\"0\" HLD=\"0\" TPA=\"28\" PO=\"0\" A=\"7\"
+        E=\"0\" G=\"7\" GS=\"0\" W=\"0\" L=\"0\" CG=\"0\" GF=\"3\" SHO=\"0\" SV=\"0\"
+        BSV=\"0\" SVO=\"0\"/><pitcher id=\"489189\" name=\"Outman, Josh\" ACTIVE_SW=\"Y\"
+        STATUS_CD=\"A\" LAST_NAME=\"Outman\" NAME_DISPLAY_LAST_FIRST=\"Outman, Josh\"
+        NAME_DISPLAY_FIRST_LAST=\"Josh Outman\" NAME_DISPLAY_ROSTER=\"Outman\" BATS=\"L\"
+        THROWS=\"L\" POS=\"P\" JERSEY_NUMBER=\"88\" YEAR=\"2014\" TEAM_ID=\"114\"
+        TEAM_ABBREV=\"CLE\" LEAGUE_ID=\"103\" LEAGUE=\"AL\" LEAGUE_GAMES=\"162\" IP=\"6.0\"
+        IP_SORT=\"6.0\" ER=\"1\" ERA=\"1.50\" ERA_SORT=\"1.5\" H=\"4\" R=\"1\" HR=\"1\"
+        HB=\"0\" BB=\"5\" IBB=\"0\" SO=\"7\" WP=\"0\" AVG=\".182\" AVG_SORT=\"0.18181819\"
+        SLG=\".318\" SLG_SORT=\"0.3181818\" WHIP=\"1.50\" WHIP_SORT=\"1.5\" PCT=\"1.000\"
+        PCT_SORT=\"1.0\" AB=\"22\" SF=\"0\" SAC=\"0\" GIDP=\"0\" P_INH_RUNNER=\"3\"
+        P_INH_RUNNER_SCORED=\"0\" AO=\"4\" GO=\"7\" NP=\"109\" BK=\"0\" HLD=\"0\"
+        TPA=\"27\" PO=\"0\" A=\"1\" E=\"0\" G=\"7\" GS=\"0\" W=\"2\" L=\"0\" CG=\"0\"
+        GF=\"1\" SHO=\"0\" SV=\"0\" BSV=\"0\" SVO=\"0\"/><pitcher id=\"446372\" name=\"Kluber,
+        Corey\" ACTIVE_SW=\"Y\" STATUS_CD=\"A\" LAST_NAME=\"Kluber\" NAME_DISPLAY_LAST_FIRST=\"Kluber,
+        Corey\" NAME_DISPLAY_FIRST_LAST=\"Corey Kluber\" NAME_DISPLAY_ROSTER=\"Kluber\"
+        BATS=\"R\" THROWS=\"R\" POS=\"P\" JERSEY_NUMBER=\"28\" YEAR=\"2014\" TEAM_ID=\"114\"
+        TEAM_ABBREV=\"CLE\" LEAGUE_ID=\"103\" LEAGUE=\"AL\" LEAGUE_GAMES=\"162\" IP=\"23.1\"
+        IP_SORT=\"23.333334\" ER=\"14\" ERA=\"5.40\" ERA_SORT=\"5.4\" H=\"34\" R=\"15\"
+        HR=\"2\" HB=\"0\" BB=\"6\" IBB=\"0\" SO=\"19\" WP=\"0\" AVG=\".337\" AVG_SORT=\"0.33663365\"
+        SLG=\".505\" SLG_SORT=\"0.5049505\" WHIP=\"1.71\" WHIP_SORT=\"1.7142857\"
+        PCT=\".333\" PCT_SORT=\"0.33333334\" AB=\"101\" SF=\"1\" SAC=\"1\" GIDP=\"1\"
+        P_INH_RUNNER=\"0\" P_INH_RUNNER_SCORED=\"0\" AO=\"27\" GO=\"23\" NP=\"390\"
+        BK=\"0\" HLD=\"0\" TPA=\"109\" PO=\"0\" A=\"3\" E=\"0\" G=\"4\" GS=\"4\" W=\"1\"
+        L=\"2\" CG=\"0\" GF=\"0\" SHO=\"0\" SV=\"0\" BSV=\"0\" SVO=\"0\"/><pitcher
+        id=\"471911\" name=\"Carrasco, Carlos\" ACTIVE_SW=\"Y\" STATUS_CD=\"A\" LAST_NAME=\"Carrasco\"
+        NAME_DISPLAY_LAST_FIRST=\"Carrasco, Carlos\" NAME_DISPLAY_FIRST_LAST=\"Carlos
+        Carrasco\" NAME_DISPLAY_ROSTER=\"Carrasco\" BATS=\"R\" THROWS=\"R\" POS=\"P\"
+        JERSEY_NUMBER=\"59\" YEAR=\"2014\" TEAM_ID=\"114\" TEAM_ABBREV=\"CLE\" LEAGUE_ID=\"103\"
+        LEAGUE=\"AL\" LEAGUE_GAMES=\"162\" IP=\"10.1\" IP_SORT=\"10.333333\" ER=\"9\"
+        ERA=\"7.84\" ERA_SORT=\"7.83871\" H=\"13\" R=\"10\" HR=\"1\" HB=\"2\" BB=\"5\"
+        IBB=\"0\" SO=\"12\" WP=\"2\" AVG=\".310\" AVG_SORT=\"0.30952382\" SLG=\".452\"
+        SLG_SORT=\"0.45238096\" WHIP=\"1.74\" WHIP_SORT=\"1.7419355\" PCT=\".000\"
+        PCT_SORT=\"0.0\" AB=\"42\" SF=\"1\" SAC=\"0\" GIDP=\"0\" P_INH_RUNNER=\"0\"
+        P_INH_RUNNER_SCORED=\"0\" AO=\"7\" GO=\"11\" NP=\"186\" BK=\"0\" HLD=\"0\"
+        TPA=\"50\" PO=\"1\" A=\"1\" E=\"0\" G=\"2\" GS=\"2\" W=\"0\" L=\"2\" CG=\"0\"
+        GF=\"0\" SHO=\"0\" SV=\"0\" BSV=\"0\" SVO=\"0\"/><pitcher id=\"502083\" name=\"McAllister,
+        Zach\" ACTIVE_SW=\"Y\" STATUS_CD=\"A\" LAST_NAME=\"McAllister\" NAME_DISPLAY_LAST_FIRST=\"McAllister,
+        Zach\" NAME_DISPLAY_FIRST_LAST=\"Zach McAllister\" NAME_DISPLAY_ROSTER=\"McAllister\"
+        BATS=\"R\" THROWS=\"R\" POS=\"P\" JERSEY_NUMBER=\"34\" YEAR=\"2014\" TEAM_ID=\"114\"
+        TEAM_ABBREV=\"CLE\" LEAGUE_ID=\"103\" LEAGUE=\"AL\" LEAGUE_GAMES=\"162\" IP=\"17.2\"
+        IP_SORT=\"17.666666\" ER=\"4\" ERA=\"2.04\" ERA_SORT=\"2.037736\" H=\"15\"
+        R=\"4\" HR=\"0\" HB=\"0\" BB=\"6\" IBB=\"0\" SO=\"15\" WP=\"1\" AVG=\".227\"
+        AVG_SORT=\"0.22727273\" SLG=\".333\" SLG_SORT=\"0.33333334\" WHIP=\"1.19\"
+        WHIP_SORT=\"1.1886792\" PCT=\"1.000\" PCT_SORT=\"1.0\" AB=\"66\" SF=\"0\"
+        SAC=\"0\" GIDP=\"1\" P_INH_RUNNER=\"0\" P_INH_RUNNER_SCORED=\"0\" AO=\"22\"
+        GO=\"14\" NP=\"282\" BK=\"0\" HLD=\"0\" TPA=\"72\" PO=\"0\" A=\"1\" E=\"0\"
+        G=\"3\" GS=\"3\" W=\"2\" L=\"0\" CG=\"0\" GF=\"0\" SHO=\"0\" SV=\"0\" BSV=\"0\"
+        SVO=\"0\"/><pitcher id=\"446099\" name=\"Axford, John\" ACTIVE_SW=\"Y\" STATUS_CD=\"A\"
+        LAST_NAME=\"Axford\" NAME_DISPLAY_LAST_FIRST=\"Axford, John\" NAME_DISPLAY_FIRST_LAST=\"John
+        Axford\" NAME_DISPLAY_ROSTER=\"Axford\" BATS=\"R\" THROWS=\"R\" POS=\"P\"
+        JERSEY_NUMBER=\"44\" YEAR=\"2014\" TEAM_ID=\"114\" TEAM_ABBREV=\"CLE\" LEAGUE_ID=\"103\"
+        LEAGUE=\"AL\" LEAGUE_GAMES=\"162\" IP=\"6.2\" IP_SORT=\"6.6666665\" ER=\"3\"
+        ERA=\"4.05\" ERA_SORT=\"4.05\" H=\"3\" R=\"3\" HR=\"1\" HB=\"0\" BB=\"6\"
+        IBB=\"0\" SO=\"8\" WP=\"1\" AVG=\".136\" AVG_SORT=\"0.13636364\" SLG=\".318\"
+        SLG_SORT=\"0.3181818\" WHIP=\"1.35\" WHIP_SORT=\"1.35\" PCT=\".000\" PCT_SORT=\"0.0\"
+        AB=\"22\" SF=\"1\" SAC=\"1\" GIDP=\"0\" P_INH_RUNNER=\"1\" P_INH_RUNNER_SCORED=\"0\"
+        AO=\"8\" GO=\"5\" NP=\"128\" BK=\"0\" HLD=\"0\" TPA=\"30\" PO=\"0\" A=\"0\"
+        E=\"0\" G=\"8\" GS=\"0\" W=\"0\" L=\"1\" CG=\"0\" GF=\"8\" SHO=\"0\" SV=\"5\"
+        BSV=\"1\" SVO=\"6\"/><pitcher id=\"502028\" name=\"Wood, Blake\" ACTIVE_SW=\"Y\"
+        STATUS_CD=\"A\" LAST_NAME=\"Wood\" NAME_DISPLAY_LAST_FIRST=\"Wood, Blake\"
+        NAME_DISPLAY_FIRST_LAST=\"Blake Wood\" NAME_DISPLAY_ROSTER=\"Wood, Bl\" BATS=\"R\"
+        THROWS=\"R\" POS=\"P\" JERSEY_NUMBER=\"49\" YEAR=\"2014\" TEAM_ID=\"114\"
+        TEAM_ABBREV=\"CLE\" LEAGUE_ID=\"103\" LEAGUE=\"AL\" LEAGUE_GAMES=\"162\" IP=\"6.1\"
+        IP_SORT=\"6.3333335\" ER=\"5\" ERA=\"7.11\" ERA_SORT=\"7.105263\" H=\"4\"
+        R=\"5\" HR=\"0\" HB=\"1\" BB=\"7\" IBB=\"2\" SO=\"7\" WP=\"0\" AVG=\".182\"
+        AVG_SORT=\"0.18181819\" SLG=\".273\" SLG_SORT=\"0.27272728\" WHIP=\"1.74\"
+        WHIP_SORT=\"1.7368422\" PCT=\".000\" PCT_SORT=\"0.0\" AB=\"22\" SF=\"0\" SAC=\"0\"
+        GIDP=\"0\" P_INH_RUNNER=\"1\" P_INH_RUNNER_SCORED=\"0\" AO=\"5\" GO=\"6\"
+        NP=\"125\" BK=\"0\" HLD=\"0\" TPA=\"30\" PO=\"0\" A=\"1\" E=\"0\" G=\"7\"
+        GS=\"0\" W=\"0\" L=\"1\" CG=\"0\" GF=\"3\" SHO=\"0\" SV=\"0\" BSV=\"0\" SVO=\"0\"/><pitcher
+        id=\"519240\" name=\"Rzepczynski, Marc\" ACTIVE_SW=\"Y\" STATUS_CD=\"A\" LAST_NAME=\"Rzepczynski\"
+        NAME_DISPLAY_LAST_FIRST=\"Rzepczynski, Marc\" NAME_DISPLAY_FIRST_LAST=\"Marc
+        Rzepczynski\" NAME_DISPLAY_ROSTER=\"Rzepczynski\" BATS=\"L\" THROWS=\"L\"
+        POS=\"P\" JERSEY_NUMBER=\"35\" YEAR=\"2014\" TEAM_ID=\"114\" TEAM_ABBREV=\"CLE\"
+        LEAGUE_ID=\"103\" LEAGUE=\"AL\" LEAGUE_GAMES=\"162\" IP=\"8.0\" IP_SORT=\"8.0\"
+        ER=\"1\" ERA=\"1.13\" ERA_SORT=\"1.125\" H=\"4\" R=\"1\" HR=\"0\" HB=\"0\"
+        BB=\"5\" IBB=\"1\" SO=\"6\" WP=\"0\" AVG=\".154\" AVG_SORT=\"0.15384616\"
+        SLG=\".192\" SLG_SORT=\"0.1923077\" WHIP=\"1.13\" WHIP_SORT=\"1.125\" PCT=\".000\"
+        PCT_SORT=\"0.0\" AB=\"26\" SF=\"0\" SAC=\"0\" GIDP=\"2\" P_INH_RUNNER=\"6\"
+        P_INH_RUNNER_SCORED=\"2\" AO=\"7\" GO=\"9\" NP=\"113\" BK=\"0\" HLD=\"0\"
+        TPA=\"31\" PO=\"0\" A=\"0\" E=\"0\" G=\"9\" GS=\"0\" W=\"0\" L=\"1\" CG=\"0\"
+        GF=\"0\" SHO=\"0\" SV=\"0\" BSV=\"1\" SVO=\"1\"/><pitcher id=\"547348\" name=\"Lee,
+        C.C.\" ACTIVE_SW=\"Y\" STATUS_CD=\"A\" LAST_NAME=\"Lee\" NAME_DISPLAY_LAST_FIRST=\"Lee,
+        C.C.\" NAME_DISPLAY_FIRST_LAST=\"C.C. Lee\" NAME_DISPLAY_ROSTER=\"Lee\" BATS=\"R\"
+        THROWS=\"R\" POS=\"P\" JERSEY_NUMBER=\"20\" YEAR=\"2014\" TEAM_ID=\"114\"
+        TEAM_ABBREV=\"CLE\" LEAGUE_ID=\"103\" LEAGUE=\"AL\" LEAGUE_GAMES=\"162\" IP=\"3.1\"
+        IP_SORT=\"3.3333333\" ER=\"1\" ERA=\"2.70\" ERA_SORT=\"2.7\" H=\"3\" R=\"2\"
+        HR=\"0\" HB=\"1\" BB=\"1\" IBB=\"0\" SO=\"2\" WP=\"0\" AVG=\".231\" AVG_SORT=\"0.23076923\"
+        SLG=\".308\" SLG_SORT=\"0.30769232\" WHIP=\"1.20\" WHIP_SORT=\"1.2\" PCT=\"--\"
+        PCT_SORT=\"--\" AB=\"13\" SF=\"0\" SAC=\"0\" GIDP=\"0\" P_INH_RUNNER=\"4\"
+        P_INH_RUNNER_SCORED=\"0\" AO=\"5\" GO=\"3\" NP=\"68\" BK=\"0\" HLD=\"0\" TPA=\"15\"
+        PO=\"0\" A=\"0\" E=\"1\" G=\"4\" GS=\"0\" W=\"0\" L=\"0\" CG=\"0\" GF=\"1\"
+        SHO=\"0\" SV=\"0\" BSV=\"0\" SVO=\"0\"/></home_pitching></TeamStats>"
+    http_version: 
+  recorded_at: Sun, 20 Apr 2014 10:49:08 GMT
+recorded_with: VCR 2.9.0
