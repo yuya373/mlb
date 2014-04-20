@@ -51,6 +51,9 @@ end
 
 group :test do
   gem 'factory_girl_rails'
+  gem 'rake_shared_context'
+  gem 'webmock'
+  gem 'vcr'
 end
 # Use ActiveModel has_secure_password
 # gem 'bcrypt', '~> 3.1.7'
