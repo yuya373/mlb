@@ -1,7 +1,7 @@
 class CreateBatterStats < ActiveRecord::Migration
   def change
     create_table :batter_stats do |t|
-      t.belongs_to :batter
+      t.belongs_to :batter, null: false
       t.integer :h, null: false
       t.integer :ab, null: false
       t.integer :tb, null: false
@@ -25,6 +25,6 @@ class CreateBatterStats < ActiveRecord::Migration
       t.integer :tpa, null: false
       t.timestamps
     end
-    add_index :batter_stats, :batter_id
+    add_index :batter_stats, :batter_id, unique: true
   end
 end
