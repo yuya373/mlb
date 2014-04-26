@@ -18,7 +18,7 @@ class Team < ActiveRecord::Base
   self.primary_key = :id
   include Scrapable
   TEAM_ID = ((108..121).to_a + (133..147).to_a + [158]).freeze
-  has_many :batters, foreign_key: :team_id
+  has_many :player, foreign_key: :team_id
   class << self
     def create_or_update(doc)
       attr = normarize(doc.first.attributes)
