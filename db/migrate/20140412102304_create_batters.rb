@@ -1,18 +1,34 @@
 class CreateBatters < ActiveRecord::Migration
   def change
-    create_table :batters, id: false do |t|
-      t.integer :id, null: false
-      t.string :first_name, null: false
-      t.string :last_name, null: false
-      t.integer :bats, limit: 1, null: false
-      t.integer :throws, limit: 1, null: false
-      t.integer :pos, limit: 1, null: false
-      t.integer :jersey_number, null: false
-      t.belongs_to :team, null: false
+    create_table :batters do |t|
+      t.belongs_to :player, null: false
+      t.integer :h, null: false
+      t.integer :ab, null: false
+      t.integer :tb, null: false
+      t.integer :r, null: false
+      t.integer :b2, null: false
+      t.integer :b3, null: false
+      t.integer :hr, null: false
+      t.integer :rbi, null: false
+      t.integer :sac, null: false
+      t.integer :sf, null: false
+      t.integer :hbp, null: false
+      t.integer :bb, null: false
+      t.integer :ibb, null: false
+      t.integer :so, null: false
+      t.integer :sb, null: false
+      t.integer :cs, null: false
+      t.integer :gidp, null: false
+      t.integer :np, null: false
+      t.integer :go, null: false
+      t.integer :ao, null: false
+      t.integer :tpa, null: false
+      t.float :avg, null: false
+      t.float :slg, null: false
+      t.float :ops, null: false
+      t.float :obp, null: false
       t.timestamps
     end
-
-    add_index :batters, :team_id
-    add_index :batters, :id, unique: true
+    add_index :batters, :player_id, unique: true
   end
 end

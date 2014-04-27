@@ -4,7 +4,10 @@ namespace :scrape do
   TEAM_ID = ((108..121).to_a + (133..147).to_a + [158]).freeze
 
   desc 'get all'
-  task all: ['team:get', 'batter:get']
+  task all: ['team:get', 'batter:get', 'pitcher:get']
+
+  desc 'get player'
+  task player: ['batter:get', 'pitcher:get']
 
   namespace :team do
     desc 'get Team'
@@ -20,8 +23,19 @@ namespace :scrape do
     task get: :environment do
       get_doc do |doc|
         batter = doc.css('batter')
+        Player.create_or_update(batter)
         Batter.create_or_update(batter)
-        BatterStat.create_or_update(batter)
+      end
+    end
+  end
+
+  namespace :pitcher do
+    desc 'get pitcher'
+    task get: :environment do
+      get_doc do |doc|
+        pitcher = doc.css('pitcher')
+        Player.create_or_update(pitcher)
+        Pitcher.create_or_update(pitcher)
       end
     end
   end
