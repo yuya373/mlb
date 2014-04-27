@@ -35,6 +35,7 @@ namespace :scrape do
       get_doc do |doc|
         pitcher = doc.css('pitcher')
         Player.create_or_update(pitcher)
+        Pitcher.create_or_update(pitcher)
       end
     end
   end
