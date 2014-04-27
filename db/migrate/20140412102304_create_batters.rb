@@ -23,6 +23,10 @@ class CreateBatters < ActiveRecord::Migration
       t.integer :go, null: false
       t.integer :ao, null: false
       t.integer :tpa, null: false
+      t.float :avg, null: false
+      t.float :slg, null: false
+      t.float :ops, null: false
+      t.float :obp, null: false
       t.timestamps
     end
     add_index :batters, :player_id, unique: true
