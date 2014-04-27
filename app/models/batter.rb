@@ -66,7 +66,7 @@ class Batter < ActiveRecord::Base
 
     def normarize_key(key)
       if key =~ /\s*_sort/
-        return key.gsub(/_sort/,'')
+        return key.gsub(/_sort/, '')
       elsif key == 'id'
         return 'player_id'
       end
